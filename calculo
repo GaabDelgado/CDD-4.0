@@ -1,0 +1,2 @@
+N_1 = input("Digite um número de 0 a 10")
+N_2 = input("Digite outro número de 0 a 10")
