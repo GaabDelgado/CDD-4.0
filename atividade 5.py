@@ -1,26 +1,9 @@
-# menu principal
-n1=int(input("Digite um número: "))
-n2=int(input("Digite outro númmero: "))
+#Faça um código pra ler 5 numeros e guardar numa array e armazenar em um vetor.Após a leitura total dos 5 numeros, o código deve escrever esses 5 numeros lidos na ordem inversa
 
-print("[1] - SOMA")
-print("[2] - SUBTRAÇÃO")
-print("[3] - MULTIPLICAÇÃO")
-print("[4] - DIVISÃO")
-print("[5] - DIGITE OUTRO NÚMERO")
-print("[6] - SAIR")
-while 1:
-    res = int(input("Opcao: "))
-    if res == 1:
-        print(n1 + n2)
-    elif res == 2:
-        print(n1-n2)
-    elif res == 3:
-        print(n1*n2)
-    elif res == 4:
-        print(n1/n2)
-    elif res == 5:
-        continue
-    elif res == 6:
-        break
-    else:
-        print("ERRO: A opção não se encontra defenida ! tente novamente!")
+lista=[]
+for x in range(5):
+    lista.append(int(input("Digite um número: ")))
+for y in range(-1, -6, -1):
+    print(lista[y])
+
+#Está percorrendo o indice no negativo ao contrário usando o range negativo (1, 2, 3, 4 // -4,-3, -2,-1)

@@ -1,19 +1,11 @@
-#print usando "for"
-for x in range (1, 11):
-    print (x)
+#Faça um código para ler 5 nomes de usuários e suas respectivas senhas e armazenar cada lista em um array diferente, após completar a digitação, imprimir, nome, senha e posição dos dados no array
 
-#print usando "while"
-n=1
-while n<=10
-    print(n,end="")
-n+=1
+lista_usuario=[]
+lista_senha=[]
+for x in range(5):
+    lista_usuario.append(input("Nome de usuário: "))
+    lista_senha.append(input("Digite a senha: "))
 
-#print usando "for" reverso
-for x in range (10, 0 , -1):
-    print(x, end=" ")
-
-#print usando while reverso
-n = 10
-while n>=1:
-    print(n, end=" ")
-    n-=1
+#6.2 mostrar posição na array
+for y in range (5):
+    print(y, lista_usuario[y],lista_senha[y])
