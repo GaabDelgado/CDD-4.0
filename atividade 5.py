@@ -1,9 +1,43 @@
-#Faça um código pra ler 5 numeros e guardar numa array e armazenar em um vetor.Após a leitura total dos 5 numeros, o código deve escrever esses 5 numeros lidos na ordem inversa
+#Faça um algoritmo que leia 10 vetores do tipo inteiro e armazene-os em um vetor.
+#A seguir, o algoritmo deverá informar:
 
-lista=[]
-for x in range(5):
-    lista.append(int(input("Digite um número: ")))
-for y in range(-1, -6, -1):
-    print(lista[y])
+#(1) todos os números pares que existem no vetor;
+#(2) o menor e o maior valor existente no vetor;
+#(3) quantos dos valores do vetor são maiores que a média desses valores
 
-#Está percorrendo o indice no negativo ao contrário usando o range negativo (1, 2, 3, 4 // -4,-3, -2,-1)
+num=[]
+for x in range (5):
+    num.append(int(input("Digite um valor:"))) #SOLICITA OS NÚMEROS DO VETOR!
+print('=-=' * 20)
+
+for z in range(5):
+    if num[z] % 2 == 0: #<- VERIFICAR NÚMEROS PARES!!
+        print(f'{num[z]}, \n')
+print('=-=' * 20)
+
+acumulador = 0
+menornum = 0
+maiornum = 0
+con_media=0
+
+for y in range(5): #MOSTRA MENOR E O MAIOR NÚMERO DO VETOR!
+    acumulador+=num[y]
+    if y==0:
+        menornum = num[0]
+        maiornum = num[0]
+        continue
+    if num[y] > maiornum:
+        maiornum = num[y]
+    if num[y] <  menornum:
+        menornum = num[y]
+
+print(f'O menor valor é {menornum} e o maior é {maiornum}')
+print('=-='*20)
+
+media=acumulador /5
+
+for c in range(5): #MOSTRA VETORES ACIMA DA MÉDIA!
+    if num[c] >= media:
+        con_media += 1
+
+print(f'{con_media} números foram maior que a média')
