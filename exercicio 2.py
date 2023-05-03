@@ -1,10 +1,12 @@
-#Altere o exercicio anterior e mostre na tela ao final, o nome de cada aluno e sua respectiva posição no array
+#Escreva um algoritmo para ler dois valores(considere que não serão lidos valores iguais) e escrevel-los em ordem crescente
 
-alunos=int(input("Digite a quantidade de alunos da sala: "))
-lista_alunos =[]
-for i in range(alunos):
-    lista_alunos.append(input("Digite o nome dos alunos: "))
-cont=0
-for aluno in lista_alunos:
-        print(cont,aluno )
-        cont+=1
+v1=int(input("Digite o valor 2: "))
+v2=int(input("Digiteo valor 2: "))
+
+while v1 == v2:
+    v2 = int(input("Digite um valor: "))
+
+if v1 > v2:
+    print(f' {v1} > {v2}')
+else:
+    print(f'{v2} > {v1}')
