@@ -10,7 +10,7 @@ print('''
 
 import random #importa uma biblioteca que tras funções aleatorias.
 
-palavras=["computador", "cachorro", "brasil", "passaro"]
+palavras=["computador", "cachorro", "brasil", "passaro", "sport", "instituto"]
 
 palavra= random.choice(palavras) #escolhe uma palavra.
 
